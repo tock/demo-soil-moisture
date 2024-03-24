@@ -1,0 +1,21 @@
+# Licensed under the Apache License, Version 2.0 or the MIT License.
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+# Copyright Tock Contributors 2024.
+
+[package]
+name = "makepython-soil-moisture"
+build = "build.rs"
+version = "0.1.0"
+authors = ["Tock Project Developers <tock-dev@googlegroups.com>"]
+edition = "2021"
+
+[dependencies]
+cortexm4 = { git = "https://github.com/tock/tock", rev = "22ddb0b9e5c40dc731d4e6055b61e2feb2bf5533" }
+kernel = { git = "https://github.com/tock/tock", rev = "22ddb0b9e5c40dc731d4e6055b61e2feb2bf5533" }
+nrf52 = { git = "https://github.com/tock/tock", rev = "22ddb0b9e5c40dc731d4e6055b61e2feb2bf5533" }
+nrf52840 = { git = "https://github.com/tock/tock", rev = "22ddb0b9e5c40dc731d4e6055b61e2feb2bf5533" }
+components = { git = "https://github.com/tock/tock", rev = "22ddb0b9e5c40dc731d4e6055b61e2feb2bf5533" }
+nrf52_components = { git = "https://github.com/tock/tock", rev = "22ddb0b9e5c40dc731d4e6055b61e2feb2bf5533" }
+
+capsules-core = { git = "https://github.com/tock/tock", rev = "22ddb0b9e5c40dc731d4e6055b61e2feb2bf5533" }
+capsules-extra = { git = "https://github.com/tock/tock", rev = "22ddb0b9e5c40dc731d4e6055b61e2feb2bf5533" }
