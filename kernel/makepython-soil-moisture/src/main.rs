@@ -12,6 +12,7 @@
 
 use kernel::capabilities;
 use kernel::component::Component;
+use kernel::deferred_call::DeferredCallClient;
 use kernel::hil::time::Counter;
 use kernel::hil::usb::Client;
 use kernel::platform::{KernelResources, SyscallDriverLookup};
@@ -678,6 +679,7 @@ pub unsafe fn start() -> (
     //--------------------------------------------------------------------------
 
     // Process loader.
+    loader.register();
     loader.start();
 
     // Configure the USB stack to enable a serial port over CDC-ACM.
